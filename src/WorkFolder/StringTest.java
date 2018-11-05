@@ -41,33 +41,61 @@ public class StringTest {
 				city5 = input.nextLine();
 				
 // if city one compared to city 2 <0(less that zero) 
-	if (city1.compareTo(city2)<0) {
+	if (city1.compareTo(city2)>0) {
 		temp = city1;
 		city1= city2;
 		city2=temp;
 	}
-	else if (city2.compareTo(city3)<0){ 
+	 if (city2.compareTo(city3)>0){ 
 				temp= city2;
 				city2= city3;
 				city3= temp;
+				if (city1.compareTo(city2)>0) {
+					temp = city1;
+					city1= city2;
+					city2=temp;
+				}
 	}
-	else if (city3.compareTo(city4)<0) {
+	 if (city3.compareTo(city4)>0) {
 		temp = city3;
 		city3=city4;
 		city4=temp;
-		
+		 if (city2.compareTo(city3)>0){ 
+				temp= city2;
+				city2= city3;
+				city3= temp;
+				if (city1.compareTo(city2)>0) {
+					temp = city1;
+					city1= city2;
+					city2=temp;
+				}
 	}
-	else if (city4.compareTo(city5)<0) {
+	}
+	 if (city4.compareTo(city5)>0) {
 		temp=city4;
 		city4=city5;
 		city5=temp;
+		if (city3.compareTo(city4)>0) {
+			temp = city3;
+			city3=city4;
+			city4=temp;
+			 if (city2.compareTo(city3)>0){ 
+					temp= city2;
+					city2= city3;
+					city3= temp;
+					if (city1.compareTo(city2)>0) {
+						temp = city1;
+						city1= city2;
+						city2=temp;
+					}
+		}
+		}
 	}
-	else if (city5.compareTo(city1)<0) {
-	   temp=city5;
-	   city5=city1;
-	   city1=temp;
-
-	}
-System.out.println("The alphabetical order of your cities are "+city1+""+city2+""+city3+""+city4+""+city5);
+System.out.println("The alphabetical order of your cities are ");
+System.out.println( city1);
+System.out.println( city2);
+System.out.println(city3);
+System.out.println(city4);
+System.out.println(city5);
 }
 }
