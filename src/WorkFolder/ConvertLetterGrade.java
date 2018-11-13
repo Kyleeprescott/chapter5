@@ -3,23 +3,29 @@ import java.util.Scanner;
 public class ConvertLetterGrade {
 
 	public static void main(String[] args) {
-		String Letter;
-		String A;
-		String B;
-		String C;
-		String D;
-		String F;
+		
+		
 		Scanner input = new Scanner(System.in);
 		
 		// prompt the user 
-		System.out.println(" Eneter your letter grade you want to convert");
-	      Letter = input.nextLine();
-	      if (Letter == A ) {
-	    	  
+		System.out.println(" Enter your letter grade");
+		char letter = input.nextLine().charAt(0);
+		if (letter =='a') {
+			System.out.println("90");
 	      }
-	 
-		
-
+	 if (letter =='b') {
+		 System.out.println("80");
+	 }
+	if (letter =='c') {
+		System.out.println("70");
+	}
+     if (letter =='d') {
+    	 System.out.println("60");
+     }
+     if (letter =='f') {
+    	 System.out.println("50");
+     }
+     
 	}
 
 }
